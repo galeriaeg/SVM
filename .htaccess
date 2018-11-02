@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+
+RewriteRule ^home/?$ index.html [NC,L]
+RewriteRule ^post/?$ interna.html [NC,L]
+RewriteRule ^send-post/?$ envia-post.html [NC,L]
+
+
+
+ErrorDocument 404 http://localhost:8080/GaleriaEstudioGrafico/vs8/404/
+
+

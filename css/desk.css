@@ -1,0 +1,816 @@
+/*************   GLOBAL   *************/
+
+body{
+	margin:0;
+	padding:0;
+}
+
+
+form{
+	margin:0;
+	padding:0;
+}
+
+
+ul{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+li{
+	padding:0;
+	margin:0;
+}
+
+fieldset{
+	border:1px solid #CCC;
+	font: normal 1em 'Titillium Web', sans-serif;
+}
+
+img{
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+label{
+	color:#999;
+}	
+
+
+legend{
+	font: normal 1.1em 'Titillium Web', sans-serif;
+	color:#777;
+}	
+
+p{
+	margin:30px 0;
+}
+
+
+
+
+/*************  ESTRUTURA   *************/
+#topo{
+	width:100%;
+	height:auto;
+	float:left;
+	background:#FFF;
+	padding:40px 0;
+}
+
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    /*background-color:#EDEDED;*/
+    list-style:none;
+	text-align:center;
+	font: normal 1em 'Maven Pro', sans-serif;
+	letter-spacing:5px;
+	Word-spacing:10px;
+}
+#menu ul li { display: inline; }
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    /* visual do link */
+    /*background-color:#EDEDED;*/
+    color:#339967;
+    text-decoration: none;
+    border-bottom:1px solid #EDEDED;
+}
+#menu ul li a:hover {
+    /*background-color:#D6D6D6;*/
+    color: #6D6D6D;
+    border-bottom:1px solid #555;
+}
+
+#rodape{
+	float:left;
+	width:100%;
+	float:left;
+	border-top:2px #009858 solid;
+	padding:40px 0;
+	margin-top:80px;
+}
+
+
+#painel{
+	width:100%;
+	height:780px;
+	float:left;
+	background-image:url('../imgs/bg-geral.jpg');
+	background-color:#339967;
+	border-bottom:150px solid #E8E8E8;
+}
+
+
+
+#tarjaSessaoGreen{
+	width:80%;
+	height:20px;
+	margin:80px 10%;
+	float:left;
+	border-bottom:1px solid #009858;
+	font: normal 1em 'Maven Pro', sans-serif;
+	color:#009858;
+}
+#tarjaSessaoOrange{
+	width:80%;
+	height:20px;
+	margin:80px 10%;
+	float:left;
+	border-bottom:1px solid #FF6E0D;
+	font: normal 1em 'Maven Pro', sans-serif;
+	color:#009858;	
+}
+#tarjaSessaoGreenInt{
+	width:100%;
+	height:20px;
+	margin:60px 0;
+	float:left;
+	border-bottom:1px solid #009858;
+	font: normal 0.9em 'Maven Pro', sans-serif;
+	color:#009858;
+}
+
+
+/*************  COLUNAS  RESPONSIVAS  ***********/
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	
+}
+.container{
+	width:98%;
+	margin-left:auto;
+	margin-right:auto;
+	background:#CCC;
+}
+
+.row{
+	margin-left:-5px;
+	margin-right:-5px;
+}
+.row:before, 
+.row:after{
+	content:"";
+	display:table;
+}
+.row:after{
+	clear:both;
+}
+.col{
+	display:inline-block;
+	vertical-align:top;
+	min-height:1px;
+	padding-left:5px;
+	padding-right:5px;
+	width:100%;
+	margin-right:-4px;
+}
+
+.col-2{
+	width:50%;
+}
+
+.col-3{
+	width:33.33333%;
+}
+
+.col-4{
+	width:25%;
+}
+
+.teste{
+	background:#CDC;
+	padding:5px;
+	text-align:center;
+	margin:2px 0;
+	color:red;
+}
+
+.big{
+	height:50px;
+}
+/***********   COLUNAS  RESPONSIVAS  ************/
+
+
+
+
+
+
+
+
+
+
+
+/*********   BLOCOS / BOX  ***********/
+.conteudo{
+	width:80%;
+	float:left;
+	margin:0 10%;
+	border:0px solid #CCC;
+}
+
+.header-painel{
+	width:78%;
+	float:left;
+	margin-top:120px;
+	margin-bottom:20px;
+}
+.header-painel-two{
+	width:95%;
+	float:left;
+	margin:100px 0;
+	margin-left:50px;
+}
+
+
+.box-news-painel{
+	float:left;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+	justify-content:space-between;
+}
+
+.box-item-four{
+	min-height:200px;
+	width:23%;
+	padding:2%;
+	border-radius:7px;
+	background:#E8E8E8;
+	margin:0;
+	text-align:left;
+}
+
+.box-item-three{
+	min-height:250px;
+	width:31.8888%;
+	border-radius:7px;
+}
+
+.box-img-left{
+	width:100%;
+	height:450px;
+	float:left;
+	border-radius:7px;
+	background-size:100%;
+}
+.box-img-right{
+	width:100%;
+	float:right;
+	border-radius:7px;
+	height:450px;
+	background-size:100%;
+}
+
+.box-img-center{
+	width:100%;
+	height:auto;
+	float:left;
+	border-radius:7px;
+	background-size:100%;
+	margin-top:80px;
+}
+
+.box-left{
+	width:61%;
+	float:left;
+}
+.box-right{
+	width:31.5555%;
+	float:right;
+}
+
+.box-food{
+	width:100%;
+	background:#FFE9D7;
+	float:left;
+	margin:0;
+	border:0;
+	padding:80px 0;
+	background-image:url('../imgs/bg-food.jpg');
+}
+
+.col-for-four{
+	width:33.3333%;
+	float:left;
+	background:#E80;
+}
+
+.box-foto-circle{
+	width:auto;
+	max-height:250px;
+	float:left;
+}
+.box-desc-post{
+	width:80%;
+	max-height:250px;
+	float:left;
+}
+
+.box-head-post{
+	float:left;
+	margin:40px 0;
+}
+
+
+.item-head-post{
+	width:auto;
+	height:60px;
+	padding:0 20px;
+	float:left;
+	border-right:1px solid #CCC;
+}
+
+.conteudo-post{
+	font: normal 1.1em 'Maven Pro', sans-serif;
+	word-spacing:2px;
+	line-height:25px;
+	color:#666;
+	float:left;	
+}
+
+
+.box-perfil{
+	background:#82C7AA;
+	padding:40px;
+	height:802px;
+	border-radius:5px;
+	background-image:url('../imgs/bg-perfil-viagem.jpg');
+
+}
+
+.conteudo-perfil{
+	font: normal 1.1em 'Maven Pro', sans-serif;
+	word-spacing:2px;
+	line-height:25px;
+	color:#FFF;
+	float:left;	
+	margin:40px 0;
+}
+
+
+
+
+.box-link-topicos{
+	float:left;
+	word-spacing:30px;
+	margin:20px 0;
+	letter-spacing:5px;
+}
+
+.box-form{
+	float:left;
+	border:1px solid #CCC;
+	padding:20px;
+	width:100%;
+	background:#f1f1f1;
+}
+
+.box-media-social{
+	float:left;
+	background:#FFF;
+	border-radius:7px;
+	padding:8px 20px;
+	color:#7F7F7F;
+	position: absolute;
+    bottom:80px;
+}
+
+.coluna-posts{
+	float:left;
+}
+.user-post{
+	width:70%;
+	margin-top:10px;
+}
+.post-item{
+	float:left;
+	margin:15px 0;
+}
+
+
+
+
+
+/***********  TEXTOS ***********/
+.tit-H1{
+	font: normal 3em 'Bitter', serif;
+	color:#FFF;
+	margin:10px 0;
+	margin-top:20px;
+	text-decoration:none;
+	float:left;
+}
+a.tit-H1:hover{
+	color:#eee;
+}
+	
+.tit-H2-green{
+	font: normal 2em 'Bitter', serif;
+	color:#339966;
+	margin:30px 0;
+	float:left;
+	clear:left;
+	text-decoration:none;
+}
+a.tit-H2-green:hover{
+	color:#666;
+}
+
+
+.tit-H2-orange{
+	font: normal 2em 'Bitter', serif;
+	color:#FF8D37;
+	margin:30px 0;
+	float:left;
+	clear:left;
+	text-decoration:none;
+}
+a.tit-H2-orange:hover{
+	color:#666;
+}
+
+
+.tit-H3{
+	float:left;
+	text-align:left;
+	font: normal 1.25em 'Bitter', serif;
+	color:#666666;
+	line-height:28px;
+	text-decoration:none;
+}
+a.tit-H3:hover{
+	color:#339966;
+}
+
+
+.title-H1{
+	font: normal 3em 'Bitter', serif;
+	color:#009858;
+	text-decoration:none;
+	float:left;	
+}
+.title-H2{
+	font: normal 2em 'Bitter', serif;
+	color:#666;
+	text-decoration:none;
+}	
+
+
+.title-H2-white{
+	font: normal 2.5em 'Bitter', serif;
+	color:#FFF;
+	text-decoration:none;
+	float:left;
+}
+
+
+.legenda-H5-white{
+	font: normal 0.9em 'Maven Pro', sans-serif;
+	letter-spacing:2px;
+	Word-spacing:2px;
+	color:#FFF;
+	margin:10px 0;
+	float:left;
+	clear:left;
+}
+
+.legenda-H5-gray{
+	font: normal 0.9em 'Maven Pro', sans-serif;
+	letter-spacing:2px;
+	Word-spacing:2px;
+	line-height:35px;
+	color:#666;
+	margin:10px 0;
+	float:left;
+	clear:left;
+	padding-right:25px;
+}
+
+.legenda-user{
+	margin:0;
+	padding:0;
+}
+
+
+.link-green{
+	font-family: 'Maven Pro', sans-serif;
+	letter-spacing:2px;
+	Word-spacing:2px;
+	line-height:35px;
+	color:#339966;
+	background:#FFF;
+	float:right;
+	padding-left:25px;
+	text-decoration:none;
+}
+a.link-green:hover{
+	text-decoration:underline;
+}
+.txt-green{
+	letter-spacing:2px;
+	Word-spacing:2px;
+	line-height:35px;
+	color:#339966;
+	background:#FFF;
+	float:left;
+	padding-right:25px;
+	text-decoration:none;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+
+
+.link-orange{
+	font-family: 'Maven Pro', sans-serif;
+	letter-spacing:2px;
+	Word-spacing:2px;
+	line-height:35px;
+	color:#FF6E0D;
+	background:#FFF;
+	float:right;
+	padding-left:25px;
+	text-decoration:none;
+}
+a.link-orange:hover{
+	text-decoration:underline;
+}
+
+.txt-orange{
+	letter-spacing:2px;
+	Word-spacing:2px;
+	line-height:35px;
+	color:#FF6E0D;
+	background:#FFF;
+	float:left;
+	padding-right:25px;
+	text-decoration:none;
+	font-family: 'Maven Pro', sans-serif;
+}	
+
+
+.texto-H3-gray{
+	letter-spacing:2px;
+	word-spacing:2px;
+	line-height:38px;
+	color:#666;
+	float:left;
+	padding-right:25px;
+	text-decoration:none;
+	font: normal 1.1em 'Bitter', serif;	
+}
+
+
+.tit-gray{
+	font: normal 2em 'Bitter', serif;
+	color:#666;
+	margin-top:10px 0;
+	margin-top:35px;
+	float:left;
+	clear:left;
+}
+
+.autor-post{
+	font: normal 1em 'Maven Pro', sans-serif;
+	color:#666;
+	margin-top:12px;
+	float:left;
+	clear:left;	
+}
+.topico-post{
+	font: normal 0.9em 'Maven Pro', sans-serif;
+	color:#666;
+	margin-top:23px;
+	float:left;
+	clear:left;	
+	letter-spacing:4px;
+}
+
+.center{
+	text-align:center
+}
+
+.link-topicos{
+	font: normal 0.8em 'Maven Pro', sans-serif;
+	line-height:25px;
+	color:#666;
+	text-decoration:none;
+	font-weight:bold; 
+}
+a.link-topicos:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+/***********   ELEMENTOS  ***********/
+
+.circle-foto{
+	width: 120px;
+	height: 120px;
+	border-radius:60px;
+	border:0;
+	background-repeat:no-repeat;
+	background-size:100%;
+	float:left;
+	margin-right:30px;
+}
+
+.circle-foto-post{
+	width: 60px;
+	height: 60px;
+	border-radius:30px;
+	border:0;
+	background-repeat:no-repeat;
+	background-size:100%;
+	float:left;
+}
+
+.circle-foto-perfil{
+	width: 160px;
+	height: 160px;
+	border-radius:80px;
+	border:0;
+	background-repeat:no-repeat;
+	background-size:100%;
+	float:left;
+	margin-bottom:40px;
+}
+
+.foto-user-post{
+	margin-right:15px;
+}
+
+.icon-news{
+	color:#82C7AA;
+	float:right;
+	width:100%;
+	text-align:right;
+	margin-bottom:20px;
+	font-size:1.8em;
+}
+
+.tag-orange{
+	background:#FF8D37;
+	padding:10px 20px;
+	font-family: 'Maven Pro', sans-serif;
+	color:#FFF;
+	float:left;
+	border-radius:5px;
+	letter-spacing:5px;
+	margin-top:30px;
+}
+
+.tag-green{
+	background:#83C7AB;
+	padding:10px 20px;
+	font-family: 'Maven Pro', sans-serif;
+	color:#FFF;
+	float:left;
+	border-radius:5px;
+	letter-spacing:5px;
+	margin-top:30px;
+}
+
+.tag-gray{
+	background:#555;
+	padding:10px 20px;
+	font-family: 'Maven Pro', sans-serif;
+	color:#FFF;
+	float:left;
+	border-radius:5px;
+	letter-spacing:5px;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ico-social{
+	margin:0 12px;
+	cursor:pointer;
+	font-size:1.2em;
+}
+i.ico-social:hover{
+	color:#339967;
+}
+
+
+/***********   FORMULARIO  ***********/
+.textarea{
+	padding:18px;
+	float:left;
+	border:1px solid #CCC;
+	border-radius:5px;
+	width:100%;
+	font-size:1em;
+	color:#666;
+	margin:8px 0;
+}
+.input-text{
+	padding:18px;
+	float:left;
+	border:1px solid #CCC;
+	border-radius:5px;
+	width:49.3333%;
+	font-size:1em;
+	color:#666;
+	margin:0 4px;
+}
+
+
+.input-btn{
+	padding:18px 60px;
+	float:left;
+	border:0;
+	border-radius:5px;
+	font-size:1em;
+	color:#fff;
+	margin:0 4px;
+	background:#009858;
+	cursor:pointer;
+	margin-top:8px;
+}
+input.input-btn:hover{
+	background:#05ad66;
+	cursor:pointer;
+}
+
+
+
+
+
+
+/***********   IMAGENS  ***********/
+
+.logo{
+	width:300px;
+}
+
+.ft-box{
+	float:left;
+	width:100%;
+	height:auto;
+}
+
+.foto-insta{
+	background-size:102%;
+}
+a.foto-insta:hover{
+	-webkit-filter: contrast(120%);
+	-moz-filter: contrast(120%);
+	-ms-filter: contrast(120%);
+    -o-filter: contrast(120%);
+	filter: contrast(120%);
+}
+
+
+.ico-insta{
+	display:block;
+	margin:0 auto;
+	width:60px;
+	position:relative;
+	margin-top:-20px;
+	margin-right:-20px;
+	/*left:50%;
+	top:50%;
+	margin-left:-35px;
+	margin-top:-35px;*/
+}
+
+.seta-ancora{
+	width:45px;
+	position:fixed;
+	z-index:100;
+	right:15px;
+	bottom:15px;
+}
+.fig-aviao{
+	float:left;
+	width:100%;
+}
+
+
+
