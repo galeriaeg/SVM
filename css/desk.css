@@ -234,27 +234,31 @@ p{
 
 .box-news-painel{
 	float:left;
-	width:100%;
-	display:flex;
+	width:82%;
+	margin:0 9%;
+	/*display:flex;
 	flex-direction:row;
 	flex-wrap:no-wrap;
-	justify-content:space-between;
+	justify-content:space-between;*/
 }
 
 .box-item-four{
 	min-height:200px;
-	width:23%;
+	width:22%;
 	padding:2%;
 	border-radius:7px;
 	background:#E8E8E8;
-	margin:0;
+	margin:0 1.5%;
 	text-align:left;
+	float:left;
 }
 
 .box-item-three{
 	min-height:250px;
-	width:31.8888%;
+	width:30.3333%;
 	border-radius:7px;
+	margin:0 1.5%;
+	float:left;
 }
 
 .box-img-left{
@@ -282,11 +286,11 @@ p{
 }
 
 .box-left{
-	width:61%;
+	width:62%;
 	float:left;
 }
 .box-right{
-	width:31.5555%;
+	width:30.5555%;
 	float:right;
 }
 
@@ -635,6 +639,7 @@ a.link-topicos:hover{
 }
 a.tag:hover{
 	color:#222;
+	background:#f2f2f2;
 }
 
 /***********   ELEMENTOS  ***********/
