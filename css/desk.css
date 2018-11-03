@@ -388,6 +388,7 @@ p{
 
 .coluna-posts{
 	float:left;
+	/*background:#ea0;*/
 }
 .user-post{
 	width:70%;
@@ -397,7 +398,11 @@ p{
 	float:left;
 	margin:15px 0;
 }
-
+.coluna-tags{
+	float:left;
+	/*background:#ead;*/
+	width:100%;
+}
 
 
 
@@ -612,8 +617,25 @@ a.link-topicos:hover{
 }
 
 
-
-
+.tag{
+	background:#f5f5f5;
+	width:29.2222%;
+	margin:2%;
+	margin-bottom:20px;
+	margin-top:0;
+	padding:12px 5%;
+	text-decoration:none;
+	font: normal 0.8em 'Maven Pro', sans-serif;
+	float:left;
+	text-align:center;
+	letter-spacing:2px;
+	word-spacing:2px;
+	font-weight:bold;
+	color:#777;
+}
+a.tag:hover{
+	color:#222;
+}
 
 /***********   ELEMENTOS  ***********/
 
