@@ -276,7 +276,7 @@
 		float:left;
 		width:82%;
 		margin:-100px 9%;
-		margin-bottom:20px;
+		margin-bottom:30px;
 	}
 	
 	
@@ -295,7 +295,7 @@
 		}
 	
 	.box-item-four{
-		min-height:200px;
+		min-height:210px;
 		width:22%;
 		padding:2%;
 		border-radius:7px;
@@ -330,7 +330,7 @@
 	
 	.box-img-center{
 		width:100%;
-		height:400px;
+		height:450px;
 		float:left;
 		border-radius:7px;
 		background-size:100%;
@@ -377,6 +377,22 @@
 		max-height:250px;
 		float:left;
 	}
+	
+	
+	.box-foto-destaque{
+		width:auto;
+		max-height:250px;
+		float:left;
+	}
+	
+	.box-foto-serie{
+		width:auto;
+		max-height:250px;
+		float:left;
+		margin-top:60px;
+		}
+	
+	
 	.box-desc-post{
 		width:80%;
 		max-height:250px;
@@ -478,8 +494,8 @@
 	.tit-H1{
 		font: normal 3em 'Bitter', serif;
 		color:#FFF;
-		margin:10px 0;
-		margin-top:20px;
+		margin:0px 0;
+		margin-top:28px;
 		text-decoration:none;
 		float:left;
 	}
@@ -744,7 +760,7 @@
 	}
 	
 	.icon-news{
-		color:#82C7AA;
+		color:#a7cec7;
 		float:right;
 		width:100%;
 		text-align:right;
@@ -857,7 +873,8 @@
 	/***********   IMAGENS  ***********/
 	
 	.logo{
-		width:300px;
+		width:250px;
+		margin-top:55px;
 	}
 	
 	.logo-mob{
