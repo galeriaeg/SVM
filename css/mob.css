@@ -1,7 +1,12 @@
-@media only screen and (min-width: 1024px){
+@media only screen and (max-width: 425px) {
 	
 	
 	/*************   GLOBAL   *************/
+	
+	*{
+		margin:0;
+		padding:0;
+	}
 	
 	body{
 		margin:0;
@@ -19,11 +24,14 @@
 		padding:0;
 		margin:0;
 		list-style-type:none;
+		width:100%;
 	}
 	
 	li{
 		padding:0;
 		margin:0;
+		width:100%;
+		float:left;
 	}
 	
 	fieldset{
@@ -59,111 +67,105 @@
 		width:100%;
 		height:auto;
 		float:left;
-		background:#FFF;
-		padding:40px 0;
 		border-bottom:1px solid #EEE;
 	}
-	
-	#box-menu-mob{
-		display:none;
-	}
-	
 	
 	
 	#menu{
 		width:100%;
 		float:left;
 		margin:0;
-		padding:15px 0;
-		display:block !important;
-		text-align:center;
-		}
-	
-	#menu ul li{
-		display:inline;
-		font: normal 1em 'Maven Pro', sans-serif;
-		letter-spacing:5px;
-		Word-spacing:10px;
-		text-decoration: none;
+		display:none;
 	}
-		
+	#menu ul li{
+		display:block;
+		padding:15px 0;
+		text-align:center;
+		font: normal 1.2em 'Maven Pro', sans-serif;
+		border-top:2px solid #FFF;
+		width:100%;
+		background:#EEE;
+	}
 	#menu ul li a{
 		color:#009881;
 		text-decoration: none;
-		padding-bottom:8px;
-		margin:0 25px;
-		}	
+
+	}
 	#menu ul li a:hover {
 		color: #6D6D6D;
 		border-bottom:1px solid #555;
-	}
+		text-decoration: none;
+		padding-bottom:15px;
+	}	
 	
 	
-
 	
 	
 	#rodape{
 		float:left;
 		width:100%;
-		float:left;
 		border-top:1px #76d0c2 solid;
 		padding:40px 0;
 		margin-top:80px;
 		text-align:center;
 	}
 	
-	
 	#rodape a{
 	color:#009881;
-	margin:0 20px;
+	margin:0 10px;
+	padding:8px 0;
 	font: normal 1em 'Maven Pro', sans-serif;
 	text-decoration: none;
+	line-height:35px;
 	}
 	#rodape a:hover {
 	color:#555;
 	}
 	
-	#rodape ul li{
-		display:inline;
-		}
+
+	
 	
 	
 	#painel{
 		width:100%;
-		height:660px;
+		height:600px;
+		background-position:40% 45%;
 		float:left;
 		background-image:url('../imgs/bg-geral2.jpg');
 		background-color:#339967;
 		border-bottom:0px solid #D6EDE4;
+		
 	}
+	
+	
 	
 	#tarja-SessaoGreen{
 		width:80%;
 		height:20px;
-		margin:80px 10% 80px 10%;
+		margin:150px 10% 50px 10%;
 		float:left;
 		border-bottom:1px solid #76d0c2;
 		font: normal 0.9em 'Maven Pro', sans-serif;
-		color:#009881;
+		color:#009858;
 		display:block;
-	}	
-	
+	}
 	#tarjaSessaoGreen{
 		width:80%;
 		height:20px;
-		margin:80px 10%;
+		margin:60px 10%;
 		float:left;
 		border-bottom:1px solid #76d0c2;
-		font: normal 1em 'Maven Pro', sans-serif;
-		color:#009881;
+		font: normal 0.9em 'Maven Pro', sans-serif;
+		color:#009858;
+		display:block;
 	}
 	#tarjaSessaoOrange{
 		width:80%;
 		height:20px;
-		margin:80px 10%;
+		margin:60px 10%;
 		float:left;
 		border-bottom:1px solid #FF6E0D;
-		font: normal 1em 'Maven Pro', sans-serif;
+		font: normal 0.9em 'Maven Pro', sans-serif;
 		color:#009858;	
 	}
 	#tarjaSessaoGreenInt{
@@ -171,7 +173,7 @@
 		height:20px;
 		margin:60px 0;
 		float:left;
-		border-bottom:1px solid #76d0c2;
+		border-bottom:1px solid #009858;
 		font: normal 0.9em 'Maven Pro', sans-serif;
 		color:#009858;
 	}
@@ -261,24 +263,22 @@
 	.header-painel{
 		width:100%;
 		float:left;
-		margin-top:120px;
-		margin-bottom:20px;
+		margin-top:60px;
+		margin-bottom:85px;
 	}
 	.header-painel-two{
-		width:95%;
+		width:100%;
 		float:left;
-		margin:100px 0;
-		margin-left:50px;
+		margin-left:0;
+		padding:8%;
 	}
 	
 	
 	.box-news-painel{
 		float:left;
 		width:82%;
-		margin:-100px 9%;
-		margin-bottom:20px;
+		margin:-90px 9%;
 	}
-	
 	
 	.box-food-painel{
 		float:left;
@@ -292,30 +292,29 @@
 		width:82%;
 		margin:0px 9%;
 		margin-bottom:20px;
-		}
+	}
 	
 	.box-item-four{
-		min-height:200px;
-		width:22%;
-		padding:2%;
+		min-height:155px;
+		width:100%;
+		padding:4%;
 		border-radius:7px;
 		background:#dff1ee;
-		margin:0 1.5%;
+		margin-top:10px;
 		text-align:left;
 		float:left;
 	}
 	
 	.box-item-three{
 		min-height:250px;
-		width:30.3333%;
+		width:100%;
 		border-radius:7px;
-		margin:0 1.5%;
+		margin:0;
 		float:left;
 	}
 	
 	.box-img-left{
 		width:100%;
-		height:auto;
 		float:left;
 		border-radius:7px;
 		background-size:100%;
@@ -324,36 +323,36 @@
 		width:100%;
 		float:right;
 		border-radius:7px;
-		height:auto;
 		background-size:100%;
 	}
 	
 	.box-img-center{
 		width:100%;
-		height:400px;
+		height:550px;;
 		float:left;
 		border-radius:7px;
-		background-size:100%;
-		margin-top:80px;
+		background-size:curve;
+		background-position:43% 50%;
 	}
 	
 	.box-left{
-		width:62%;
-		float:left;
+		width:100%;
 		margin-top:0;
-		border:1px solid #dd0;
+		float:left;
+		display:block;
+		margin-bottom:50px;
 	}
 	.box-left-conteudo{
 		width:100%;
 		float:left;
 		margin-top:0;
 		border:1px solid #0d0;
-	}	
+	}		
 	
 	.box-right{
-		width:30.5555%;
+		width:100%;
 		float:right;
-		margin-top:0;
+		margin-bottom:0px;
 	}
 	
 	.box-food{
@@ -381,6 +380,7 @@
 		width:80%;
 		max-height:250px;
 		float:left;
+		margin-top:15px;
 	}
 	
 	.box-head-post{
@@ -407,7 +407,8 @@
 	
 	
 	.box-perfil{
-		background:#30dfc2;
+		display:none;
+		background:#82C7AA;
 		padding:40px;
 		height:802px;
 		border-radius:5px;
@@ -448,9 +449,7 @@
 		border-radius:7px;
 		padding:8px 20px;
 		color:#7F7F7F;
-		width:100%;
 		bottom:80px;
-		display:block;
 	}
 	
 	.coluna-posts{
@@ -476,7 +475,7 @@
 	
 	/***********  TEXTOS ***********/
 	.tit-H1{
-		font: normal 3em 'Bitter', serif;
+		font: normal 2em 'Bitter', serif;
 		color:#FFF;
 		margin:10px 0;
 		margin-top:20px;
@@ -516,7 +515,7 @@
 	.tit-H3{
 		float:left;
 		text-align:left;
-		font: normal 1.25em 'Bitter', serif;
+		font: normal 1.2em 'Bitter', serif;
 		color:#666666;
 		line-height:28px;
 		text-decoration:none;
@@ -527,7 +526,7 @@
 	
 	
 	.title-H1{
-		font: normal 3em 'Bitter', serif;
+		font: normal 2em 'Bitter', serif;
 		color:#009881;
 		text-decoration:none;
 		float:left;	
@@ -566,7 +565,7 @@
 		margin:10px 0;
 		float:left;
 		clear:left;
-		padding-right:25px;
+		padding-right:0;
 	}
 	
 	.legenda-user{
@@ -576,11 +575,12 @@
 	
 	
 	.link-green{
+		display:none;
 		font-family: 'Maven Pro', sans-serif;
 		letter-spacing:2px;
 		Word-spacing:2px;
 		line-height:35px;
-		color:#009881;
+		color:#339966;
 		background:#FFF;
 		float:right;
 		padding-left:25px;
@@ -604,6 +604,7 @@
 	
 	
 	.link-orange{
+		display:none;
 		font-family: 'Maven Pro', sans-serif;
 		letter-spacing:2px;
 		Word-spacing:2px;
@@ -708,14 +709,14 @@
 	/***********   ELEMENTOS  ***********/
 	
 	.circle-foto{
-		width: 120px;
-		height: 120px;
+		width: 110px;
+		height: 110px;
 		border-radius:60px;
 		border:0;
 		background-repeat:no-repeat;
 		background-size:100%;
 		float:left;
-		margin-right:30px;
+		margin-right:0;
 	}
 	
 	.circle-foto-post{
@@ -784,20 +785,17 @@
 		letter-spacing:5px;
 	}
 	
-	
-	
-.embed{
-	position:relative;
-	width:100%;
-	padding-bottom:56.25%;
-}
-.embed iframe{
-	position:absolute;
-	width:100%;
-	height:100%;
-	border:none;
-}
-
+	.embed{
+		position:relative;
+		width:100%;
+		padding-bottom:56.25%;
+	}
+	.embed iframe{
+		position:absolute;
+		width:100%;
+		height:100%;
+		border:none;
+	}
 	
 	.ico-social{
 		margin:0 12px;
@@ -825,10 +823,10 @@
 		float:left;
 		border:1px solid #CCC;
 		border-radius:5px;
-		width:49.3333%;
+		width:100%;
 		font-size:1em;
 		color:#666;
-		margin:0 4px;
+		margin-bottom:8px;
 	}
 	
 	
@@ -840,12 +838,12 @@
 		font-size:1em;
 		color:#fff;
 		margin:0 4px;
-		background:#009881;
+		background:#009858;
 		cursor:pointer;
 		margin-top:8px;
 	}
 	input.input-btn:hover{
-		background:#17bba2;
+		background:#05ad66;
 		cursor:pointer;
 	}
 	
@@ -857,12 +855,15 @@
 	/***********   IMAGENS  ***********/
 	
 	.logo{
-		width:300px;
+		display:none;
 	}
 	
 	.logo-mob{
-		display:none;
+		width:43%;
+		display:block;
+		margin:30px auto;
 	}
+	
 	
 	.ft-box{
 		float:left;
@@ -871,9 +872,8 @@
 	}
 	
 	.foto-insta{
-		background-size:cover;
-		text-align:center;
-		height:200px;
+		background-size:100%;
+		min-height:165px;
 	}
 	a.foto-insta:hover{
 		-webkit-filter: contrast(120%);
@@ -888,7 +888,7 @@
 	width:100px;
 	margin:0 auto;
 	display:block;
-	margin-top:50px;
+	margin-top:32px;
 	}
 	
 	.seta-ancora{
@@ -904,7 +904,10 @@
 	}
 	
 	.menuBars{
-		display:none;
+		left:12px;
+		position:absolute;	
+		top:12px;
+		cursor:pointer;
 	}
 	
 }
