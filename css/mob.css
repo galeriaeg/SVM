@@ -346,7 +346,7 @@
 		width:100%;
 		float:left;
 		margin-top:0;
-		border:1px solid #0d0;
+		border:0px solid #0d0;
 	}		
 	
 	.box-right{
@@ -398,18 +398,32 @@
 	}
 	
 	.box-head-post{
+		width:100%;
 		float:left;
 		margin:40px 0;
 	}
 	
+	.icon-perfil{
+		font-size:2em;
+		margin-top:10px;
+		margin-left:15px;
+		color:#a6c7c2;
+		}
+	
 	
 	.item-head-post{
 		width:auto;
-		height:60px;
-		padding:0 20px;
+		height:50px;
+		padding:0 4px;
+		margin:5px;
 		float:left;
-		border-right:1px solid #CCC;
+		border-top:0px solid #CCC;
+		font-size:0.9em;
 	}
+	
+	.break{
+		clear:left;
+		}
 	
 	.conteudo-post{
 		font: normal 1.1em 'Maven Pro', sans-serif;
@@ -421,13 +435,16 @@
 	
 	
 	.box-perfil{
-		display:none;
+		position:absolute;
+		z-index:100;
+		top:30px;
+		left:30px;
+		right:30px;
 		background:#82C7AA;
-		padding:40px;
+		padding:5%;
 		height:802px;
 		border-radius:5px;
-		background-image:url('../imgs/bg-perfil-viagem.jpg');
-		
+		background-image:url('../imgs/bg-perfil-viagem.jpg');		
 	}
 	
 	.conteudo-perfil{
@@ -459,6 +476,7 @@
 	
 	.box-media-social{
 		float:left;
+		width:100%;
 		background:#FFF;
 		border-radius:7px;
 		padding:8px 20px;
@@ -769,7 +787,8 @@
 		border:0;
 		background-repeat:no-repeat;
 		background-size:100%;
-		float:left;
+		margin:0 auto;
+		display:block;
 		margin-bottom:40px;
 	}
 	
@@ -840,6 +859,12 @@
 		color:#339967;
 	}
 	
+	.btn-fecha-perfil{
+		font-size:1.5em;
+		color:#fff;
+		float:right;
+		}
+	
 	
 	/***********   FORMULARIO  ***********/
 	.textarea{
@@ -906,7 +931,7 @@
 	}
 	
 	.foto-insta{
-		background-size:100%;
+		background-size:105%;
 		margin-bottom:15px;
 	}
 	a.foto-insta:hover{

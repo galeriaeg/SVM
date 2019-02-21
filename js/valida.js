@@ -14,5 +14,4 @@ function validaPost(formpost){
 	formpost.email.focus();
 	return (false); 
 	}
-
 }
