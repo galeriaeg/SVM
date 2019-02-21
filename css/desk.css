@@ -341,13 +341,13 @@
 		width:62%;
 		float:left;
 		margin-top:0;
-		border:1px solid #dd0;
+		border:0px solid #dd0;
 	}
 	.box-left-conteudo{
 		width:100%;
 		float:left;
 		margin-top:0;
-		border:1px solid #0d0;
+		border:0px solid #0d0;
 	}	
 	
 	.box-right{
